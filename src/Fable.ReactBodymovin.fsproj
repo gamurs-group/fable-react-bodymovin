@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Summary>Fable bindings for the react-bodymovin npm package.</Summary>
+    <Description>Provides fable bindings for react-bodymovin, a library that parses Adobe After Effects animations and renders them natively in the browser.</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Grant Neale</Authors>
+    <PackageLicenseUrl>https://github.com/gamurs-group/fable-react-bodymovin/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/gamurs-group/fable-react-bodymovin</PackageProjectUrl>
+    <PackageTags>F#, fsharp, fable2, fable-bindings, bodymovin, lottie</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Fable.ReactBodymovin.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="*.fsproj; *.fs" PackagePath="fable\" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>
